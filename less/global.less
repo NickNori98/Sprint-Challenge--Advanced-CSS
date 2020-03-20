@@ -36,42 +36,61 @@ p {
   margin: 0 auto;  
 }
 
-@media(max-width:500px){
+
 .walk {
-	flex-direction: column-reverse;
-	max-width: @width0;
-  width: @width1;
-}
+  display: flex;
+  flex-direction: column-reverse;
+  width:@width1;
+  @media(max-width:500px){
+    .walk-img{
+      width:@width1;
+      max-width:@width0;
+      
+    
+    }
   }
-  .walk-img{
-    height: auto;
-    max-width: @width0;
-    width: @width1;
-    flex-direction: column-reverse;
+}
+  @media(max-width:500px){
+    .walk-text{
+      width:@width1;
+      max-width:@width0;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
   
   
 
-}
+
+
+
+
+
+
+  
+  
+
+  
+@media(max-width:500px){
 .space-images{
 .sky {
-	display: none;
+	.none();
 }
 .launch {
-	display: none;
+	.none();
 
 }
-
+}
 .space-images {
 	max-width:@width0;
 	width: @width1;
 }
 
 
-.container.home {
+.container.home { 
 	max-width:@width0;
 	width: @width1;
 }
 }
 
-
-/*     
+     
